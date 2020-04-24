@@ -1,28 +1,29 @@
-package com.example.security.model;
+package com.example.demo.student;
 
 public class Student {
 
     private final Integer studentId;
-    private final String name;
+    private final String studentName;
 
-    public Student(Integer studentId, String name) {
+    public Student(Integer studentId,
+                   String studentName) {
         this.studentId = studentId;
-        this.name = name;
+        this.studentName = studentName;
     }
 
     public Integer getStudentId() {
         return studentId;
     }
 
-    public String getName() {
-        return name;
+    public String getStudentName() {
+        return studentName;
     }
 
     @Override
     public String toString() {
         return "Student{" +
                 "studentId=" + studentId +
-                ", name='" + name + '\'' +
+                ", studentName='" + studentName + '\'' +
                 '}';
     }
 }

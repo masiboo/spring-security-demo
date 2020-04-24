@@ -1,4 +1,4 @@
-package com.example.security.controller;
+package com.example.demo.contoller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class TemplateController {
 
     @GetMapping("login")
-    public String getLoginView(){
+    public String getLogin() {
         return "login";
     }
 
     @GetMapping("courses")
-    public String getCourseView(){
+    public String getCourses() {
         return "courses";
     }
 }
